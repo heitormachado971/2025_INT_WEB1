@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link href="../css/style.css" rel="stylesheet">
+    <title>Cadastro de Usuário</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light border-bottom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Meu sistema</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="principal.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Cadastros
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="cadastro_cliente.html">Cliente</a></li>
+                            <li><a class="dropdown-item" href="cadastro_usuario.html">Usuário</a></li>
+                            <li><a class="dropdown-item" href="cadastro_produto.html">Produto</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Listagens
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="listagem_cliente.html">Listagem de cliente</a></li>
+                            <li><a class="dropdown-item" href="listagem_usuario.html">Listagem de usuário</a></li>
+                            <li><a class="dropdown-item" href="listagem_produto.html">Listagem de produto</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Sair</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container mt-4">
+        <div class="card shadow-sm">
+            <div class="card-header bg-white">
+                <h4 class="mb-0">Cadastro de Usuário</h4>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="inputNome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="inputNome">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputSenha" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="inputSenha">
+                    </div>
+                    <div class="mb-4">
+                        <label for="selectGrupo" class="form-label">Grupo de Usuário</label>
+                        <select class="form-select" id="selectGrupo">
+                            <option selected>Selecione uma opção</option>
+                            <option value="1">Administrador</option>
+                            <option value="2">Gerente</option>
+                            <option value="3">Comum</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary me-2">Cadastrar</button>
+                    <a href="principal.html" class="btn btn-secondary">Voltar</a>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
